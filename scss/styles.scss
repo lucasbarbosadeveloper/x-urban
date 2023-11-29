@@ -11,11 +11,12 @@
 body{
     width: 100%;
     max-width: 768px;
-    height: 100vh;
+    height: 100%;
     color: #ffffff;
     background-image: url(../imgs/background.jpg);
     background-position: center top;
-    margin: auto;
+    margin: 0 auto;
+    padding: 0;
 }
 
 .fontHighlight{
@@ -44,6 +45,7 @@ body{
     justify-content: space-between;
     padding: 1.3rem;
     width: 100%;
+    margin: auto;
 
     .cMain__descripition{
         font-size: 1.4rem;
@@ -51,6 +53,7 @@ body{
         letter-spacing: 2px;
         text-align: center;
         width: 100%;
+        max-width: 25rem;
     }
 
     .cMain__carousel{
@@ -77,6 +80,7 @@ body{
 
     .cMain__cards{
         width: 100%;
+        max-width: 350px;
         margin-bottom: 1rem;
 
         .cards{
@@ -151,6 +155,56 @@ body{
     text-align: center;
     font-size: 1rem;
     font-weight: 100;
+
+    p{
+        margin: 0;
+    }
 }
 
+// responsividade
+@media (max-width: 320px) {
+    .cMain{
+        .cMain__date{
+            .date{
+                font-size: 1.2rem;
+            }
+        }
+    }
+}
+
+@media (min-width: 700px) {
+    body{
+        box-shadow: 0px 0px 10px #00000071;
+    }
+
+    .cMain{
+        .cMain__cards{
+            max-width: 100%;
+            display: flex;
+            justify-content: space-around;
+
+            .cards{
+                align-items: center;
+                text-align: center;
+            }
+        }
+
+        .cMain__director{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            .socialMedias{
+                padding: 0;
+                display: flex;
+                gap: 2.5rem;
+
+                a{
+                    margin: 0;
+                }
+            }
+
+        }
+    }
+}
 
