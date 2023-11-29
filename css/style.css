@@ -1,3 +1,136 @@
+@import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Akshar:wght@300;600;700&display=swap");
+* {
+  padding: 0%;
+  margin: 0%;
+  box-sizing: border-box;
+  font-family: "Akshar", sans-serif;
+  letter-spacing: 1px;
+}
 
+body {
+  width: 100%;
+  max-width: 768px;
+  height: 100vh;
+  color: #ffffff;
+  background-image: url(../imgs/background.jpg);
+  background-position: center top;
+  margin: auto;
+}
+
+.fontHighlight {
+  color: #FDD700;
+}
+
+.cHeader {
+  text-align: center;
+}
+.cHeader .cHeader__logo {
+  width: 150px;
+  margin-top: 1.5rem;
+  margin-bottom: 0.3rem;
+}
+.cHeader .cHeader__edition {
+  font-family: "JetBrains Mono", monospace;
+  font-size: 18px;
+}
+
+.cMain {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.3rem;
+  width: 100%;
+}
+.cMain .cMain__descripition {
+  font-size: 23px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  text-align: center;
+  width: 100%;
+}
+.cMain .cMain__carousel {
+  width: 300px;
+  margin: 2rem 0rem;
+}
+.cMain .cMain__carousel img {
+  border-radius: 5px;
+}
+.cMain .cMain__carousel .btnBuy {
+  background-color: #FDD700;
+  color: #4B0081;
+  font-size: 18px;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+  position: absolute;
+  bottom: 0px;
+  left: 3%;
+  width: 200px;
+}
+.cMain .cMain__cards {
+  width: 100%;
+  margin-bottom: 1rem;
+}
+.cMain .cMain__cards .cards {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 200px;
+  height: 166px;
+  background-color: rgba(75, 0, 129, 0.631372549);
+  border-radius: 5px;
+  padding: 1rem;
+  margin-bottom: 1.5rem;
+}
+.cMain .cMain__cards .cards img {
+  width: 40px;
+  padding-bottom: 5px;
+}
+.cMain .cMain__cards .cards p {
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 1.5rem;
+}
+.cMain .cMain__cards .cardRigth {
+  float: right;
+  text-align: right;
+  align-items: flex-end;
+}
+.cMain .cMain__date {
+  margin-bottom: 1rem;
+}
+.cMain .cMain__date .date {
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+}
+.cMain .cMain__date .local {
+  margin-top: -20px;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: end;
+}
+.cMain .iconInstaY img {
+  margin-bottom: 2rem;
+  width: 50px;
+}
+.cMain .cMain__director {
+  width: 100%;
+  margin-bottom: 2rem;
+}
+.cMain .cMain__director .socialMedias {
+  padding-left: 3rem;
+}
+.cMain .cMain__director .socialMedias a {
+  margin-right: 1.5rem;
+}
+
+.cFooter {
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 100;
+}
 
 /*# sourceMappingURL=style.css.map */

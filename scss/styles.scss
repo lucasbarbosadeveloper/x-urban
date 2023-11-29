@@ -1,2 +1,156 @@
-@import "variables.scss"
+@import "variables.scss";
+
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    font-family: $mainFont;
+    letter-spacing: 1px;
+}
+
+body{
+    width: 100%;
+    max-width: 768px;
+    height: 100vh;
+    color: #ffffff;
+    background-image: url(../imgs/background.jpg);
+    background-position: center top;
+    margin: auto;
+}
+
+.fontHighlight{
+    color: $secondaryColor;        
+}
+
+.cHeader{
+    text-align: center;
+
+    .cHeader__logo{
+        width: 150px;
+        margin-top: 1.5rem;
+        margin-bottom: .3rem;
+    }
+
+    .cHeader__edition{
+        font-family: $secondary;
+        font-size: 18px;
+    }
+}
+
+.cMain{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.3rem;
+    width: 100%;
+
+    .cMain__descripition{
+        font-size: 23px;
+        font-weight: bold;
+        letter-spacing: 2px;
+        text-align: center;
+        width: 100%;
+    }
+
+    .cMain__carousel{
+        width: 300px;
+        margin: 2rem 0rem;
+
+        img{
+            border-radius: 5px;
+        }
+
+        .btnBuy{
+            background-color: $secondaryColor;
+            color: $mainColor;
+            font-size: 18px;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 5px;
+            position: absolute;
+            bottom: 0px;
+            left: 3%;
+            width: 200px;
+        }
+    }
+
+    .cMain__cards{
+        width: 100%;
+        margin-bottom: 1rem;
+
+        .cards{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            width: 200px;
+            height: 166px;
+            background-color: $cardColor;
+            border-radius: 5px;
+            padding: 1rem;
+            margin-bottom: 1.5rem;
+
+            img{
+                width: 40px;
+                padding-bottom: 5px;
+            }
+
+            p{
+                font-size: 20px;
+                font-weight: bold;
+                line-height: 1.5rem;
+            }
+        }
+        .cardRigth{
+            float: right;
+            text-align: right;
+            align-items: flex-end;
+        }
+    }
+
+    .cMain__date{
+        margin-bottom: 1rem;
+
+        .date{
+            font-size: 24px;
+            font-weight: bold;
+            text-align: center; 
+        }
+
+        .local{
+            margin-top: -20px;
+            font-size: 20px;
+            font-weight: bold;
+            text-align: end;
+        }
+    }
+
+    .iconInstaY{
+        
+        img{
+            margin-bottom: 2rem;
+            width: 50px;
+        }
+    }
+
+    .cMain__director{
+        width: 100%;
+        margin-bottom: 2rem;
+
+        .socialMedias{
+            padding-left: 3rem;
+
+            a{
+                margin-right: 1.5rem;
+            }
+        }
+    }
+}
+
+.cFooter{
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 100;
+}
+
 
