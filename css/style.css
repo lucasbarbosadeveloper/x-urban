@@ -11,11 +11,12 @@
 body {
   width: 100%;
   max-width: 768px;
-  height: 100vh;
+  height: 100%;
   color: #ffffff;
   background-image: url(../imgs/background.jpg);
   background-position: center top;
-  margin: auto;
+  margin: 0 auto;
+  padding: 0;
 }
 
 .fontHighlight {
@@ -26,13 +27,13 @@ body {
   text-align: center;
 }
 .cHeader .cHeader__logo {
-  width: 150px;
+  width: 9.3rem;
   margin-top: 1.5rem;
   margin-bottom: 0.3rem;
 }
 .cHeader .cHeader__edition {
   font-family: "JetBrains Mono", monospace;
-  font-size: 18px;
+  font-size: 1.2rem;
 }
 
 .cMain {
@@ -42,16 +43,18 @@ body {
   justify-content: space-between;
   padding: 1.3rem;
   width: 100%;
+  margin: auto;
 }
 .cMain .cMain__descripition {
-  font-size: 23px;
+  font-size: 1.4rem;
   font-weight: bold;
   letter-spacing: 2px;
   text-align: center;
   width: 100%;
+  max-width: 25rem;
 }
 .cMain .cMain__carousel {
-  width: 300px;
+  width: 18.7rem;
   margin: 2rem 0rem;
 }
 .cMain .cMain__carousel img {
@@ -60,36 +63,42 @@ body {
 .cMain .cMain__carousel .btnBuy {
   background-color: #FDD700;
   color: #4B0081;
-  font-size: 18px;
+  font-size: 1.2rem;
   text-decoration: none;
   font-weight: bold;
   border-radius: 5px;
   position: absolute;
   bottom: 0px;
   left: 3%;
-  width: 200px;
+  width: 12.5rem;
+  box-shadow: 0px 0px 10px black;
+}
+.cMain .cMain__carousel .btnBuy:hover {
+  background-color: #4B0081;
+  color: #FDD700;
 }
 .cMain .cMain__cards {
   width: 100%;
+  max-width: 350px;
   margin-bottom: 1rem;
 }
 .cMain .cMain__cards .cards {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  width: 200px;
-  height: 166px;
+  width: 12.5rem;
+  height: 10.3rem;
   background-color: rgba(75, 0, 129, 0.631372549);
   border-radius: 5px;
   padding: 1rem;
   margin-bottom: 1.5rem;
 }
 .cMain .cMain__cards .cards img {
-  width: 40px;
+  width: 2.5rem;
   padding-bottom: 5px;
 }
 .cMain .cMain__cards .cards p {
-  font-size: 20px;
+  font-size: 1.3rem;
   font-weight: bold;
   line-height: 1.5rem;
 }
@@ -102,19 +111,25 @@ body {
   margin-bottom: 1rem;
 }
 .cMain .cMain__date .date {
-  font-size: 24px;
+  font-size: 1.5rem;
   font-weight: bold;
   text-align: center;
 }
 .cMain .cMain__date .local {
-  margin-top: -20px;
-  font-size: 20px;
+  margin-top: -1.3rem;
+  font-size: 1.3rem;
   font-weight: bold;
   text-align: end;
 }
-.cMain .iconInstaY img {
+.cMain .iconInstaY {
   margin-bottom: 2rem;
-  width: 50px;
+}
+.cMain .iconInstaY img {
+  width: 3.2rem;
+}
+.cMain .iconInstaY img:hover {
+  background-color: rgba(169, 169, 169, 0.411);
+  border-radius: 5px;
 }
 .cMain .cMain__director {
   width: 100%;
@@ -126,11 +141,51 @@ body {
 .cMain .cMain__director .socialMedias a {
   margin-right: 1.5rem;
 }
+.cMain .cMain__director .socialMedias a:hover {
+  background-color: rgba(169, 169, 169, 0.411);
+  border-radius: 5px;
+}
 
 .cFooter {
   text-align: center;
   font-size: 1rem;
   font-weight: 100;
+}
+.cFooter p {
+  margin: 0;
+}
+
+@media (max-width: 320px) {
+  .cMain .cMain__date .date {
+    font-size: 1.2rem;
+  }
+}
+@media (min-width: 700px) {
+  body {
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4431372549);
+  }
+  .cMain .cMain__cards {
+    max-width: 100%;
+    display: flex;
+    justify-content: space-around;
+  }
+  .cMain .cMain__cards .cards {
+    align-items: center;
+    text-align: center;
+  }
+  .cMain .cMain__director {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .cMain .cMain__director .socialMedias {
+    padding: 0;
+    display: flex;
+    gap: 2.5rem;
+  }
+  .cMain .cMain__director .socialMedias a {
+    margin: 0;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
